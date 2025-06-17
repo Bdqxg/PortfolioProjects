@@ -1,6 +1,5 @@
 show databases;
-create database covid_test;
-use covid_test;
+create database demo;
 
 use demo;
 
