@@ -47,10 +47,7 @@ where continent is not null
 Group by location
 order by TotalDeathCount desc;
 
--- select *
--- from demo.coviddeaths
--- where continent is not null
--- order by 3,4;
+
 
 
 -- let's break things down by continent 
@@ -63,11 +60,7 @@ where continent is not null
 Group by continent
 order by TotalDeathCount desc;
 
--- Select location, Max(cast( total_deaths as SIGNED)) as TotalDeathCount -- use SIGNED but not INT
--- From demo.coviddeaths
--- where continent is not null
--- Group by location
--- order by TotalDeathCount desc;
+
 
 
 -- Global numbers
@@ -126,15 +119,6 @@ from PopvsVac;
 -- TEMP TABLE
 
 
--- Create Table #PercentPopulationVaccinated
--- (
--- Continent nvarchar(255),
--- Location nvarchar(255),
--- Date datetime,
--- Population numeric,
--- New_vaccinations numeric,
--- RollingPeopleVaccinated numeric
--- )
 
 DROP Table if exists PercentPopulationVaccinated;
 CREATE TEMPORARY TABLE PercentPopulationVaccinated (
